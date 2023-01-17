@@ -1,6 +1,6 @@
 ﻿namespace BinarySearchTree
 {
-    
+
     class Program
     {
 
@@ -34,7 +34,14 @@
             bn.TravesreInorder(bn.root);
             Console.WriteLine();
 
-
+            Console.WriteLine("Enter the node value which u want to search:");
+            int w = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("searching element there or not:");
+            bool t = bn.Search(w);
+            if (t)
+                Console.WriteLine("value is present:");
+            else
+                Console.WriteLine("value is not present");
 
         }
     }
